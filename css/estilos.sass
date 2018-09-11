@@ -1,0 +1,158 @@
+$seleccion: #1b1d6b
+$texto: #ffffff
+$fondo: #2624a4
+$hover: #2c95fe
+
+*
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+  font-family: 'Roboto', sans-serif
+  font-size: 20px
+
+
+*::selection
+  background: $seleccion
+  color: $texto
+
+
+body
+  background: $fondo
+  color: $texto
+  .content
+    max-width: 500px
+    width: 90%
+    margin: 40px auto
+    h1
+      width: 100%
+      text-align: center
+    .p
+      margin-bottom: 40px
+      width: 100%
+      color: $texto
+    .app
+      .fila
+        margin-bottom: 40px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+
+      .col
+        width: 50%
+
+      label
+        line-height: 40px
+
+      input
+        text-align: center
+        border: none
+
+      .btn
+        width: 100%
+        background: $seleccion
+        color: $texto
+        display: inline-block
+        height: 40px
+        vertical-align: top
+        font-size: 15px
+        text-align: center
+        border: none
+        border-radius: 4px
+        cursor: pointer
+        transition: all .3s ease
+      .btn:hover
+        background: $hover
+
+      .app.btn.false
+        background: #3acf97
+
+      .numcaracteres
+        div
+          width: 100%
+        div:nth-child(1)
+          button
+            border-radius: 4px 0 0 4px
+        input
+          height: 40px
+          width: 100%
+          cursor: default
+          background: #ff0000
+          color: $texto
+        div:nth-child(2)
+          button
+            border-radius: 0 4px 4px 0
+        .botones
+          display: flex
+          flex-direction: row
+          justify-content: space-between
+
+    .app
+      .fila.generar
+        margin-bottom: 10px
+        .col:nth-child(1)
+          width: 30%
+        .col:nth-child(3)
+          width: 65%
+        .btn-generar
+          width: 100%
+          height: 40px
+          font-size: 18px
+          padding: 0
+          line-height: 40px
+          position: relative
+
+          i
+            margin-left: 20px
+            position: relative
+            top: -1px
+            font-size: 14px
+
+      .btn-generar:after
+        content: ""
+        display: inline-block
+        width: 25px
+        height: 25px
+        background: $seleccion
+        transform: rotate(45deg)
+        position: absolute
+        top: 8px
+        right: -12.5px
+        transition: all .3s ease
+
+
+    .col:nth-child(1):hover .btn-generar:after
+      background: $hover
+
+    .app .file .generar .input-password
+      width: 100%
+      background: none
+      border-radius: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
